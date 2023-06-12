@@ -1,5 +1,8 @@
+#broken
+__pycache__
 #ignore
-**/__pycache__/
 .vscode
+
 #keep
 !*.py
+!.gitignore
