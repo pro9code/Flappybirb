@@ -1,5 +1,6 @@
 #ignore
 .vscode
+__pycache__
 
 #include
 !*.py
