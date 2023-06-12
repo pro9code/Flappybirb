@@ -22,7 +22,6 @@ Grab the latest release of Python from [here](https://www.python.org/downloads/)
 ```console
 pip install pygame
 ```
-.
 
 **Note:** If the ``pip install`` pygame did not work for you, then try this:
 Ensure ``main.py`` is in the same directory as ``./data`` and execute  ``python main.py``.
