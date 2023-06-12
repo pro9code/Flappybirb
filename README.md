@@ -1,6 +1,6 @@
 # Flappuccino
 
-Flappybirb is a fork of (Flappuccino)[https://github.com/PolyMarsDev/Flappuccino].
+Flappybirb is a fork of [Flappuccino](https://github.com/PolyMarsDev/Flappuccino).
 ## Screenshots
 
 New
