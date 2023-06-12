@@ -1,12 +1,16 @@
 import pygame, sys, time, random, colorsys, math
 from pygame.math import Vector2
-from pygame.locals import *
-from .player import Player
-from .background import Background
-from .button import Button
-from .bean import Bean
-from .utils import clamp
-from .utils import checkCollisions
+
+#No starred imports!
+import pygame.locals as loc
+
+# fixed imports
+from player import Player
+from background import Background
+from button import Button
+from bean import Bean
+from utils import clamp
+from utils import checkCollisions
 
 
 def main():
@@ -80,13 +84,13 @@ def main():
 
         for event in pygame.event.get():
             # if the user clicks the button
-            if event.type==QUIT:
+            if event.type==loc.QUIT:
                 pygame.quit()
                 sys.exit()
 
         DISPLAY.fill((231, 205, 183))
         # fill the start message on the top of the game
-        startMessage = font_small.render("POLYMARS", True, (171, 145, 123))
+        startMessage = font_small.render("POLYMARS-->pro9code", True, (171, 145, 123))
         DISPLAY.blit(startMessage, (DISPLAY.get_width()/2 - startMessage.get_width()/2, DISPLAY.get_height()/2 - startMessage.get_height()/2))
             
         # update display
@@ -111,7 +115,7 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 clicked = True
             # if the player quits
-            if event.type==QUIT:
+            if event.type==loc.QUIT:
                 pygame.quit()
                 sys.exit()
         # so the user clicked, and by any change the mouse's position was on the buttons
@@ -150,7 +154,7 @@ def main():
                 clicked = True
             if clicked and mouseY < DISPLAY.get_height() - 90:
                 jump = True
-            if event.type==QUIT:
+            if event.type==loc.QUIT:
                 pygame.quit()
                 sys.exit()
         
