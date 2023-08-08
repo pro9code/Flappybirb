@@ -20,9 +20,9 @@ def main():
     pygame.display.set_caption('Flappuccino')
     pygame.display.set_icon(Bean().sprite)
     # get fonts
-    font = pygame.font.Font('data/fonts/font.otf', 100)
-    font_small = pygame.font.Font('data/fonts/font.otf', 32)
-    font_20 = pygame.font.Font('data/fonts/font.otf', 20)
+    font = pygame.font.Font('data/fonts/font.ttf', 100)
+    font_small = pygame.font.Font('data/fonts/font.ttf', 32)
+    font_20 = pygame.font.Font('data/fonts/font.ttf', 20) #otf
     # get some images
     shop = pygame.image.load('data/gfx/shop.png')
     shop_bg = pygame.image.load('data/gfx/shop_bg.png')
